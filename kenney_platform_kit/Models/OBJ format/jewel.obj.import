@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/jewel.obj-5a326bfd65c063fa371ba9a641d3184c.mesh"
+
+[deps]
+
+files=[ "res://.import/jewel.obj-5a326bfd65c063fa371ba9a641d3184c.mesh" ]
+
+source_file="res://kenney_platform_kit/Models/OBJ format/jewel.obj"
+dest_files=[ "res://.import/jewel.obj-5a326bfd65c063fa371ba9a641d3184c.mesh", "res://.import/jewel.obj-5a326bfd65c063fa371ba9a641d3184c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

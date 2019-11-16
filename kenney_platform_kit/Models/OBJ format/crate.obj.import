@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/crate.obj-037b1319364e7db23541339d56c0a591.mesh"
+
+[deps]
+
+files=[ "res://.import/crate.obj-037b1319364e7db23541339d56c0a591.mesh" ]
+
+source_file="res://kenney_platform_kit/Models/OBJ format/crate.obj"
+dest_files=[ "res://.import/crate.obj-037b1319364e7db23541339d56c0a591.mesh", "res://.import/crate.obj-037b1319364e7db23541339d56c0a591.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

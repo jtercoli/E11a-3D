@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scene/Camerahub.gd" type="Script" id=1]
+[ext_resource path="res://PlatformObjects/BlockLarge.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Character.tscn" type="PackedScene" id=3]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_color = Color( 0.0745098, 0.713726, 0, 1 )
+
+[sub_resource type="PlaneMesh" id=2]
+material = SubResource( 1 )
+size = Vector2( 10, 10 )
+
+[sub_resource type="ConvexPolygonShape" id=3]
+points = PoolVector3Array( 5, 0, 5, -5, 0, 5, 5, 0, -5, -5, 0, -5 )
+
+[node name="Spatial" type="Spatial"]
+
+[node name="Ground" type="StaticBody" parent="."]
+
+[node name="MeshInstance" type="MeshInstance" parent="Ground"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0075376, 0, 0.00411773 )
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Ground"]
+shape = SubResource( 3 )
+
+[node name="Camerahub" type="Spatial" parent="."]
+transform = Transform( -0.00269036, 0.43066, -0.90251, 0, 0.902513, 0.430662, 0.999997, 0.00115863, -0.00242808, -1.66442, 2.51045, -0.0044779 )
+script = ExtResource( 1 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="Camerahub"]
+transform = Transform( -0.999488, 0.0293175, -0.0127905, -0.0319861, -0.916101, 0.39967, -4.79631e-008, 0.399875, 0.91657, 1.24152, 1.98587, 4.60942 )
+shadow_enabled = true
+
+[node name="Camera" type="Camera" parent="Camerahub"]
+transform = Transform( 1, 2.32831e-010, 4.65661e-010, -2.32831e-010, 1, -1.18384e-008, -4.65661e-010, 4.77655e-008, 1, 9.31323e-010, -2.38419e-007, 1.92845 )
+
+[node name="BlockLarge" parent="." instance=ExtResource( 2 )]
+
+[node name="BlockLarge2" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.82306, -0.567955, 0, 0.567955, 0.82306, 0, 0, 0, 1, 2.39416, 0, 0 )
+
+[node name="Character" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.930012, 1.65527, -0.644113 )

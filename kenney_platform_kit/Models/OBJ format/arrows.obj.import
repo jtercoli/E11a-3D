@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/arrows.obj-846793ca7004cb128aa897d0e2a104d8.mesh"
+
+[deps]
+
+files=[ "res://.import/arrows.obj-846793ca7004cb128aa897d0e2a104d8.mesh" ]
+
+source_file="res://kenney_platform_kit/Models/OBJ format/arrows.obj"
+dest_files=[ "res://.import/arrows.obj-846793ca7004cb128aa897d0e2a104d8.mesh", "res://.import/arrows.obj-846793ca7004cb128aa897d0e2a104d8.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

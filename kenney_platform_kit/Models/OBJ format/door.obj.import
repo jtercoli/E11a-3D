@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/door.obj-b1aa72450be8bf189038897e076180e3.mesh"
+
+[deps]
+
+files=[ "res://.import/door.obj-b1aa72450be8bf189038897e076180e3.mesh" ]
+
+source_file="res://kenney_platform_kit/Models/OBJ format/door.obj"
+dest_files=[ "res://.import/door.obj-b1aa72450be8bf189038897e076180e3.mesh", "res://.import/door.obj-b1aa72450be8bf189038897e076180e3.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true
