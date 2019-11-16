@@ -12,7 +12,7 @@ dest_files=[ "res://.import/blockLevel.glb-8252030ef6be8c10a2912a70633bf388.scn"
 [params]
 
 nodes/root_type="StaticBody"
-nodes/root_name="Scene Root"
+nodes/root_name="blockLevel"
 nodes/root_scale=1.0
 nodes/custom_script=""
 nodes/storage=0
